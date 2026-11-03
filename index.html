@@ -27,6 +27,7 @@ td:first-child{font-weight:700;color:#2B2118;white-space:nowrap}
 .tile span{font-size:12px;color:#4A3728}
 .mintbtn{display:block;width:100%;background:#B9B0C9;color:#fff;border:none;border-radius:14px;padding:15px;font-size:16px;font-weight:800;cursor:not-allowed}
 .prompt{background:#F6F1FF;border:1.5px dashed #9B7ED9;border-radius:12px;padding:12px;font-size:13px;line-height:1.6;white-space:pre-wrap;color:#4A3728}
+.followbtn{display:inline-block;background:#000;color:#fff;border-radius:12px;padding:11px 18px;font-weight:800;text-decoration:none;font-size:14px}
 .copybtn{background:#FFC93C;border:2px solid #2B2118;border-radius:12px;padding:10px 18px;font-weight:800;cursor:pointer;font-size:14px}
 .note{font-size:12.5px;color:#6B5A7A;text-align:center;line-height:1.5}
 .t-boba{background:#BCA9FC}.t-princess{background:#FDB3EB}.t-cool{background:#6FB2FD}
@@ -92,18 +93,30 @@ Then report the transaction hash and the new token IDs.</div>
 </div>
 
 <div class="card">
+<h2 data-t="support">応援する</h2>
+<p data-t="supportd">愛子を応援してくれる方は、Xでフォローして、この投稿をシェアしてください。</p>
+<a class="followbtn" href="https://x.com/aikoonftgrp" target="_blank" rel="noopener" data-t="follow">Xでフォローする</a>
+<div style="margin-top:12px">
+<button class="copybtn" onclick="sharePost('ja')" data-t="postja">日本語でシェア</button>
+<button class="copybtn" onclick="sharePost('en')" data-t="posten" style="margin-left:8px">英語でシェア</button>
+</div>
+</div>
+
+<div class="card">
 <h2 data-t="contracts">コントラクト</h2>
 <p data-t="contractd">まだデプロイされていません（TBD）。デプロイ後にここにアドレスとBscScanリンクが表示されます。</p>
 </div>
 
-<p class="note">Aiko (愛子) — Preview only. No contract, no mint, no official X yet.</p>
+<p class="note" data-t="foot">Aiko (愛子) — プレビューのみ。コントラクトはまだなく、ミントも開始していません。X: @aikoonftgrp</p>
 </div>
 <script>
 var T={
-ja:{banner:"プレビュー — ミントはまだ開始していません",sub:"ぶどうの仲間たち — BNBチェーン上の1,111体",spec:"仕様（提案）",s1:"総供給量",s2:"無料ミント",s2v:"トークン 1–111（ガスのみ）",s3:"フェーズ1",s3v:"トークン 112–611 — 0.00029 BNB",s4:"フェーズ2",s4v:"トークン 612–1111 — 0.0029 BNB",s5:"1ウォレット上限",s5v:"最大11体（累計）",specn:"※ フェーズ1とフェーズ2の境界（112–611 / 612–1111）は提案です。確定後にコントラクトへ反映します。",chars:"キャラクター",c1:"ボバ",c2:"プリンセス",c3:"クール",c4:"スカラー",c5:"ディノ",c6:"ラブ",c7:"ファーマー",c8:"ウィンター",c9:"スーパーヒーロー",charn:"※ 配分は提案です。連番ミントのため、無料の111体はすべてボバになります。",mint:"ミント",mintbtn:"ミントはまだ開始していません（プレビュー）",mintn:"コントラクトはまだデプロイされていません。このページではミントできません。",agent:"Agent Mint",agentd:"自分のAIエージェントに下のプロンプトを貼ると、代わりにミントしてくれます。エージェントが最も得意な英語で書かれています。",copy:"プロンプトをコピー",contracts:"コントラクト",contractd:"まだデプロイされていません（TBD）。デプロイ後にここにアドレスとBscScanリンクが表示されます。"},
-en:{banner:"PREVIEW — Mint is not open yet",sub:"Grape friends — 1,111 on BNB Chain",spec:"Spec (proposal)",s1:"Total supply",s2:"Free mint",s2v:"Tokens 1–111 (gas only)",s3:"Phase 1",s3v:"Tokens 112–611 — 0.00029 BNB",s4:"Phase 2",s4v:"Tokens 612–1111 — 0.0029 BNB",s5:"Max per wallet",s5v:"Max 11 (cumulative)",specn:"Note: the Phase 1 / Phase 2 split (112–611 / 612–1111) is a proposal, to be confirmed before deploy.",chars:"Characters",c1:"Boba",c2:"Princess",c3:"Cool",c4:"Scholar",c5:"Dino",c6:"Love",c7:"Farmer",c8:"Winter",c9:"Superhero",charn:"Note: distribution is a proposal. With sequential mint, the 111 FREE tokens are all Boba.",mint:"Mint",mintbtn:"Mint not open yet (preview)",mintn:"The contract is not deployed yet. You cannot mint from this page.",agent:"Agent Mint",agentd:"Paste the prompt below into your own AI agent and it will mint for you. The prompt is in English because agents handle it best.",copy:"Copy Prompt",contracts:"Contract",contractd:"Not deployed yet (TBD). The address and BscScan link will appear here after deploy."}
+ja:{banner:"プレビュー — ミントはまだ開始していません",sub:"ぶどうの仲間たち — BNBチェーン上の1,111体",spec:"仕様（提案）",s1:"総供給量",s2:"無料ミント",s2v:"トークン 1–111（ガスのみ）",s3:"フェーズ1",s3v:"トークン 112–611 — 0.00029 BNB",s4:"フェーズ2",s4v:"トークン 612–1111 — 0.0029 BNB",s5:"1ウォレット上限",s5v:"最大11体（累計）",specn:"※ フェーズ1とフェーズ2の境界（112–611 / 612–1111）は提案です。確定後にコントラクトへ反映します。",chars:"キャラクター",c1:"ボバ",c2:"プリンセス",c3:"クール",c4:"スカラー",c5:"ディノ",c6:"ラブ",c7:"ファーマー",c8:"ウィンター",c9:"スーパーヒーロー",charn:"※ 配分は提案です。連番ミントのため、無料の111体はすべてボバになります。",mint:"ミント",mintbtn:"ミントはまだ開始していません（プレビュー）",mintn:"コントラクトはまだデプロイされていません。このページではミントできません。",agent:"Agent Mint",agentd:"自分のAIエージェントに下のプロンプトを貼ると、代わりにミントしてくれます。エージェントが最も得意な英語で書かれています。",copy:"プロンプトをコピー",contracts:"コントラクト",contractd:"まだデプロイされていません（TBD）。デプロイ後にここにアドレスとBscScanリンクが表示されます.",support:"応援する",supportd:"愛子を応援してくれる方は、Xでフォローして、この投稿をシェアしてください。",follow:"Xでフォローする",postja:"日本語でシェア",posten:"英語でシェア",foot:"Aiko (愛子) — プレビューのみ。コントラクトはまだなく、ミントも開始していません。X: @aikoonftgrp"},
+en:{banner:"PREVIEW — Mint is not open yet",sub:"Grape friends — 1,111 on BNB Chain",spec:"Spec (proposal)",s1:"Total supply",s2:"Free mint",s2v:"Tokens 1–111 (gas only)",s3:"Phase 1",s3v:"Tokens 112–611 — 0.00029 BNB",s4:"Phase 2",s4v:"Tokens 612–1111 — 0.0029 BNB",s5:"Max per wallet",s5v:"Max 11 (cumulative)",specn:"Note: the Phase 1 / Phase 2 split (112–611 / 612–1111) is a proposal, to be confirmed before deploy.",chars:"Characters",c1:"Boba",c2:"Princess",c3:"Cool",c4:"Scholar",c5:"Dino",c6:"Love",c7:"Farmer",c8:"Winter",c9:"Superhero",charn:"Note: distribution is a proposal. With sequential mint, the 111 FREE tokens are all Boba.",mint:"Mint",mintbtn:"Mint not open yet (preview)",mintn:"The contract is not deployed yet. You cannot mint from this page.",agent:"Agent Mint",agentd:"Paste the prompt below into your own AI agent and it will mint for you. The prompt is in English because agents handle it best.",copy:"Copy Prompt",contracts:"Contract",contractd:"Not deployed yet (TBD). The address and BscScan link will appear here after deploy.",support:"Support",supportd:"Support Aiko by following on X and sharing this post.",follow:"Follow on X",postja:"Share in Japanese",posten:"Share in English",foot:"Aiko (愛子) — Preview only. No contract, no mint yet. X: @aikoonftgrp"}
 };
 function setLang(l){document.documentElement.lang=l;document.getElementById('b-ja').className=l=='ja'?'on':'';document.getElementById('b-en').className=l=='en'?'on':'';document.querySelectorAll('[data-t]').forEach(function(el){var k=el.getAttribute('data-t');if(T[l][k])el.innerHTML=T[l][k];});}
+var POSTS={ja:"🍇 愛子 (AIKO) プレビュー公開！ぶどうの仲間たち1,111体がBNBチェーンに登場します。無料111体、フェーズ1は0.00029 BNB、最大11体/ウォレット。ミントはまだ開始していません。フォローして続報をチェック👇 https://aiko-grape-sangfariz16-2583s-projects.vercel.app/ @aikoonftgrp #AIKO #NFT #BNBChain",en:"🍇 Aiko (愛子) preview is live! 1,111 grape friends coming to BNB Chain. 111 FREE, Phase 1 at 0.00029 BNB, max 11/wallet. Mint is not open yet — follow for updates 👇 https://aiko-grape-sangfariz16-2583s-projects.vercel.app/ @aikoonftgrp #AIKO #NFT #BNBChain"};
+function sharePost(l){window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(POSTS[l]),'_blank');}
 function copyPrompt(){var t=document.getElementById('prompt').innerText;if(navigator.clipboard){navigator.clipboard.writeText(t);}else{var ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);}}
 </script>
 </body>
