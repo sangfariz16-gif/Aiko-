@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Aiko (愛子) — Preview</title>
+<title>Aiko (愛子)</title>
 <style>
 body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#F6F1FF;color:#2B2118}
 .wrap{max-width:560px;margin:0 auto;padding:14px 14px 40px}
@@ -38,7 +38,6 @@ td:first-child{font-weight:700;color:#2B2118;white-space:nowrap}
 </head>
 <body>
 <div class="wrap">
-<div class="banner" data-t="banner">LIVE</div>
 <div class="lang">
 <button id="b-ja" class="on" onclick="setLang('ja')">日本語</button>
 <button id="b-en" onclick="setLang('en')">English</button>
@@ -116,8 +115,8 @@ Then report the transaction hash and the new token IDs.</div>
 </div>
 <script>
 var T={
-ja:{banner:"LIVE",sub:"ぶどうの仲間たち — BNBチェーン上の1,111体",spec:"仕様",s1:"総供給量",s2:"無料ミント",s2v:"トークン 1–111（ガスのみ）",s3:"フェーズ1",s3v:"トークン 112–611 — 0.00029 BNB",s4:"フェーズ2",s4v:"トークン 612–1111 — 0.0029 BNB",s5:"1ウォレット上限",s5v:"最大11体（累計）",specn:"※ フェーズ1とフェーズ2の境界は確定しました（112–611 / 612–1111）。",chars:"キャラクター",c1:"ボバ",c2:"プリンセス",c3:"クール",c4:"スカラー",c5:"ディノ",c6:"ラブ",c7:"ファーマー",c8:"ウィンター",c9:"スーパーヒーロー",charn:"※ 連番ミントのため、無料の111体はすべてボバになります。",mint:"ミント",mintbtn:"ミントする",mintn:"ウォレット（Binance Walletなど）で開いてください。BNBチェーン（56）が必要です。",agent:"Agent Mint",agentd:"自分のAIエージェントに下のプロンプトを貼ると、代わりにミントしてくれます。エージェントが最も得意な英語で書かれています。",copy:"プロンプトをコピー",contracts:"コントラクト",support:"応援する",supportd:"愛子を応援してくれる方は、Xでフォローして、この投稿をシェアしてください。",follow:"Xでフォローする",postja:"日本語でシェア",posten:"英語でシェア",foot:"Aiko (愛子) — 販売中。X: @aikoonftgrp",st1:"ミント済み",st2:"フェーズ",st3:"価格",statn:"ライブ情報が取得できません。接続を確認してください。",copyc:"コピー",qtyl:"数量"},
-en:{banner:"LIVE",sub:"Grape friends — 1,111 on BNB Chain",spec:"Spec",s1:"Total supply",s2:"Free mint",s2v:"Tokens 1–111 (gas only)",s3:"Phase 1",s3v:"Tokens 112–611 — 0.00029 BNB",s4:"Phase 2",s4v:"Tokens 612–1111 — 0.0029 BNB",s5:"Max per wallet",s5v:"Max 11 (cumulative)",specn:"Note: the Phase 1 / Phase 2 split is confirmed (112–611 / 612–1111).",chars:"Characters",c1:"Boba",c2:"Princess",c3:"Cool",c4:"Scholar",c5:"Dino",c6:"Love",c7:"Farmer",c8:"Winter",c9:"Superhero",charn:"Note: with sequential mint, the 111 FREE tokens are all Boba.",mint:"Mint",mintbtn:"Mint now",mintn:"Open in a wallet browser (e.g. Binance Wallet) on BNB Chain (56).",agent:"Agent Mint",agentd:"Paste the prompt below into your own AI agent and it will mint for you. The prompt is in English because agents handle it best.",copy:"Copy Prompt",contracts:"Contract",support:"Support",supportd:"Support Aiko by following on X and sharing this post.",follow:"Follow on X",postja:"Share in Japanese",posten:"Share in English",foot:"Aiko (愛子) — LIVE. X: @aikoonftgrp",st1:"Minted",st2:"Phase",st3:"Price",statn:"Live stats unavailable — check your connection.",copyc:"Copy",qtyl:"Quantity"}
+ja:{sub:"ぶどうの仲間たち — BNBチェーン上の1,111体",spec:"仕様",s1:"総供給量",s2:"無料ミント",s2v:"トークン 1–111（ガスのみ）",s3:"フェーズ1",s3v:"トークン 112–611 — 0.00029 BNB",s4:"フェーズ2",s4v:"トークン 612–1111 — 0.0029 BNB",s5:"1ウォレット上限",s5v:"最大11体（累計）",specn:"※ フェーズ1とフェーズ2の境界は確定しました（112–611 / 612–1111）。",chars:"キャラクター",c1:"ボバ",c2:"プリンセス",c3:"クール",c4:"スカラー",c5:"ディノ",c6:"ラブ",c7:"ファーマー",c8:"ウィンター",c9:"スーパーヒーロー",charn:"※ 連番ミントのため、無料の111体はすべてボバになります。",mint:"ミント",mintbtn:"ミントする",mintn:"ウォレット（Binance Walletなど）で開いてください。BNBチェーン（56）が必要です。",agent:"Agent Mint",agentd:"自分のAIエージェントに下のプロンプトを貼ると、代わりにミントしてくれます。エージェントが最も得意な英語で書かれています。",copy:"プロンプトをコピー",contracts:"コントラクト",support:"応援する",supportd:"愛子を応援してくれる方は、Xでフォローして、この投稿をシェアしてください。",follow:"Xでフォローする",postja:"日本語でシェア",posten:"英語でシェア",foot:"Aiko (愛子) — 販売中。X: @aikoonftgrp",st1:"ミント済み",st2:"フェーズ",st3:"価格",statn:"ライブ情報が取得できません。接続を確認してください。",copyc:"コピー",qtyl:"数量"},
+en:{sub:"Grape friends — 1,111 on BNB Chain",spec:"Spec",s1:"Total supply",s2:"Free mint",s2v:"Tokens 1–111 (gas only)",s3:"Phase 1",s3v:"Tokens 112–611 — 0.00029 BNB",s4:"Phase 2",s4v:"Tokens 612–1111 — 0.0029 BNB",s5:"Max per wallet",s5v:"Max 11 (cumulative)",specn:"Note: the Phase 1 / Phase 2 split is confirmed (112–611 / 612–1111).",chars:"Characters",c1:"Boba",c2:"Princess",c3:"Cool",c4:"Scholar",c5:"Dino",c6:"Love",c7:"Farmer",c8:"Winter",c9:"Superhero",charn:"Note: with sequential mint, the 111 FREE tokens are all Boba.",mint:"Mint",mintbtn:"Mint now",mintn:"Open in a wallet browser (e.g. Binance Wallet) on BNB Chain (56).",agent:"Agent Mint",agentd:"Paste the prompt below into your own AI agent and it will mint for you. The prompt is in English because agents handle it best.",copy:"Copy Prompt",contracts:"Contract",support:"Support",supportd:"Support Aiko by following on X and sharing this post.",follow:"Follow on X",postja:"Share in Japanese",posten:"Share in English",foot:"Aiko (愛子) — LIVE. X: @aikoonftgrp",st1:"Minted",st2:"Phase",st3:"Price",statn:"Live stats unavailable — check your connection.",copyc:"Copy",qtyl:"Quantity"}
 };
 var curLang='ja';
 function setLang(l){curLang=l;document.documentElement.lang=l;document.getElementById('b-ja').className=l=='ja'?'on':'';document.getElementById('b-en').className=l=='en'?'on':'';document.querySelectorAll('[data-t]').forEach(function(el){var k=el.getAttribute('data-t');if(T[l][k])el.innerHTML=T[l][k];});renderLive();}
